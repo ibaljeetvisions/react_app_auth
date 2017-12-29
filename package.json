@@ -1,6 +1,6 @@
 {
   "name": "recat-native-authtool",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "app auth",
   "main": "index.js",
   "scripts": {
