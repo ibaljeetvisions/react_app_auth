@@ -1,0 +1,56 @@
+{
+  "name": "recat-native-authtool",
+  "version": "1.0.0",
+  "description": "app auth",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "lint": "eslint ."
+  },
+  "files": [
+    "package.json",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "ios",
+    "android",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibaljeetvisions/react_app_auth.git"
+  },
+  "keywords": [
+    "react-native-appauthtool",
+    "react",
+    "react-native",
+    "auth",
+    "authentication",
+    "oauth"
+   ],
+   "peerDependencies": {
+    "react-native": "^0.50.3"
+  },
+  "author": "Amit <rohit@visions.net.in>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/ibaljeetvisions/react_app_auth/issues"
+  },
+  "homepage": "https://github.com/ibaljeetvisions/react_app_auth#readme",
+  "devDependencies": {
+    "all-contributors-cli": "^4.9.1",
+    "babel-eslint": "^8.0.2",
+    "babel-jest": "^21.2.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "2.10.2",
+    "eslint-config-formidable": "^3.0.0",
+    "eslint-plugin-filenames": "^1.2.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.3.2",
+    "invariant": "^2.2.2",
+    "jest": "^21.2.1",
+    "react": "^16.1.1",
+    "react-native": "^0.50.3"
+  },
+  "dependencies": {}
+}
