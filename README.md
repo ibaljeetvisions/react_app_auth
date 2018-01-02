@@ -45,7 +45,7 @@ flow and returns the access token, refresh token and access token expiry date wh
 throws an error when not successful.
 
 ```js
-import AppAuth from 'recat-native-authtool';
+import AppAuth from 'react-native-app-auth';
 
 const appAuth = new AppAuth(config);
 const result = await appAuth.authorize(scopes);
@@ -74,8 +74,8 @@ const result = await appAuth.revokeToken(tokenToRevoke, sendClientId);
 ## Getting started
 
 ```sh
-npm install recat-native-authtool --save
-react-native link recat-native-authtool
+npm install react-native-app-auth --save
+react-native link react-native-app-auth
 ```
 
 **Then follow the [Setup](#setup) steps to configure the native iOS and Android projects.**
@@ -89,7 +89,7 @@ steps instead.
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's
    name]`
-2. Go to `node_modules` ➜ `recat-native-authtool` and add `RNAppAuth.xcodeproj`
+2. Go to `node_modules` ➜ `react-native-app-auth` and add `RNAppAuth.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNAppAuth.a` to your project's
    `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
@@ -103,12 +103,12 @@ steps instead.
 
 2. Append the following lines to `android/settings.gradle`:
    ```
-   include ':recat-native-authtool'
-   project(':recat-native-authtool').projectDir = new File(rootProject.projectDir, '../node_modules/recat-native-authtool/android')
+   include ':react-native-app-auth'
+   project(':react-native-app-auth').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-app-auth/android')
    ```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
    ```
-     compile project(':rrecat-native-authtool')
+     compile project(':react-native-app-auth')
    ```
 
 ## Setup
@@ -345,4 +345,17 @@ await appAuth.revokeToken(refreshedState.refreshToken);
 ```
 
 ## Contributors
-Deepak Thakur || Amit Mehra || Baljeet Singh
+
+Thanks goes to these wonderful people
+([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+
+<!-- prettier-ignore -->
+| [<img src="https://avatars0.githubusercontent.com/u/6534400?v=4" width="100px;"/><br /><sub><b>Kadi Kraman</b></sub>](https://github.com/kadikraman)<br />[💻](https://github.com/FormidableLabs/react-native-app-auth/commits?author=kadikraman "Code") [📖](https://github.com/FormidableLabs/react-native-app-auth/commits?author=kadikraman "Documentation") [🚇](#infra-kadikraman "Infrastructure (Hosting, Build-Tools, etc)") [⚠️](https://github.com/FormidableLabs/react-native-app-auth/commits?author=kadikraman "Tests") [👀](#review-kadikraman "Reviewed Pull Requests") [💡](#example-kadikraman "Examples") | [<img src="https://avatars1.githubusercontent.com/u/1203949?v=4" width="100px;"/><br /><sub><b>Jani Eväkallio</b></sub>](https://twitter.com/jevakallio)<br />[💡](#example-jevakallio "Examples") [📖](https://github.com/FormidableLabs/react-native-app-auth/commits?author=jevakallio "Documentation") [⚠️](https://github.com/FormidableLabs/react-native-app-auth/commits?author=jevakallio "Tests") [👀](#review-jevakallio "Reviewed Pull Requests") [🤔](#ideas-jevakallio "Ideas, Planning, & Feedback") | [<img src="https://avatars0.githubusercontent.com/u/2041385?v=4" width="100px;"/><br /><sub><b>Phil Plückthun</b></sub>](https://twitter.com/_philpl)<br />[📖](https://github.com/FormidableLabs/react-native-app-auth/commits?author=philpl "Documentation") [👀](#review-philpl "Reviewed Pull Requests") [🤔](#ideas-philpl "Ideas, Planning, & Feedback") | [<img src="https://avatars1.githubusercontent.com/u/4206028?v=4" width="100px;"/><br /><sub><b>Imran Sulemanji</b></sub>](https://github.com/imranolas)<br />[🤔](#ideas-imranolas "Ideas, Planning, & Feedback") [👀](#review-imranolas "Reviewed Pull Requests") | [<img src="https://avatars3.githubusercontent.com/u/2393035?v=4" width="100px;"/><br /><sub><b>JP</b></sub>](http://twitter.com/jpdriver)<br />[🤔](#ideas-jpdriver "Ideas, Planning, & Feedback") [👀](#review-jpdriver "Reviewed Pull Requests") | [<img src="https://avatars2.githubusercontent.com/u/6714912?v=4" width="100px;"/><br /><sub><b>Matt Cubitt</b></sub>](https://github.com/mattcubitt)<br />[🤔](#ideas-mattcubitt "Ideas, Planning, & Feedback") [👀](#review-mattcubitt "Reviewed Pull Requests") |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors)
+specification. Contributions of any kind are welcome!
